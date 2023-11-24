@@ -3,17 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-			<button id="button-paper">Papier</button>
-			<button id="button-scissors">Nożyce</button>
+	<section class="desc">
+		<div class="container">
+			<div class="description">
+				<h2>Jan-ken-pon</h2>
+				<h2>Rock Paper Scissors!</h2>
+				<h2>human vs AI</h2>
+				<h2>Rules</h2>
+				<p>Paper beats rock<br>rock beats paper<br>scissors beats paper</p>
+				<a href="#game"><i class="fa-solid fa-play"></i></a>
+			</div>
 		</div>
-		<div id="messages"></div>
+		</section>
+	<section id="game" class="game">
+	<div class="container">
+		<div class="games">
+			<div id="buttons" class="buttons">
+				<button type="button" id="button-rock">Kamień</button>
+				<button type="button" id="button-paper">Papier</button>
+				<button type="button" id="button-scissors">Nożyce</button>
+			</div>
+			<div class="info" id="messages"></div>
+		</div>
 	</div>
+	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
