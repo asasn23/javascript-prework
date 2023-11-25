@@ -1,4 +1,4 @@
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput, argButtonName;
+var computerMove, playerMove, playerInput;
 
 const buttonRock = document.getElementById('button-rock'),
       buttonPaper = document.getElementById('button-paper'),
@@ -21,7 +21,6 @@ function buttonClicked(argButtonName) {
       return 'kamień';
     }
   }
-  
   function displayResult(argPlayerMove, argComputerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
     if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
@@ -40,7 +39,8 @@ function buttonClicked(argButtonName) {
   playerMove = argButtonName;
   console.log('wybór ruchu gracza to: ' + playerInput);
   console.log('ruch gracza to: ' + playerMove);
-  randomNumber = Math.floor(Math.random() * 3 + 1);
+  
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
   computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);
